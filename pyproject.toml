@@ -1,0 +1,48 @@
+[build-system]
+requires = ["hatchling>=1.21"]
+build-backend = "hatchling.build"
+
+[project]
+name = "indicium-adapters-agentic-ai"
+version = "0.1.0"
+description = "Agentic-AI DomainAdapter for the indicium ecosystem: CCS- and Wikidata-backed concept enrichment and classification vocabulary"
+readme = "README.md"
+# 3.11, matching the astronomy adapter: this must be installable into the
+# AgenticScienceBuilder conda environment (Python 3.11), which is where the
+# classification vocabulary it feeds is consumed.
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+keywords = ["agentic-ai", "llm", "multi-agent", "indicium", "ontology", "SSSOM"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = ["indicium-adapters>=0.5.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.6"]
+
+[project.entry-points."indicium.adapters"]
+agentic-ai = "indicium_adapters_agentic_ai.agentic_ai:AgenticAIAdapter"
+
+[project.urls]
+Homepage = "https://github.com/HolobiomicsLab/indicium-adapters-agentic-ai"
+Repository = "https://github.com/HolobiomicsLab/indicium-adapters-agentic-ai"
+Issues = "https://github.com/HolobiomicsLab/indicium-adapters-agentic-ai/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/indicium_adapters_agentic_ai"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"src/indicium_adapters_agentic_ai/_concept_index.json" = "indicium_adapters_agentic_ai/_concept_index.json"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]

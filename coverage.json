@@ -1,0 +1,352 @@
+{
+ "papers": 800,
+ "scope": "titles",
+ "min_papers": 3,
+ "phrases_considered": 152,
+ "resolved": 19,
+ "resolved_fraction": 0.125,
+ "by_source": {
+  "ACM CCS 2012": 8,
+  "Wikidata": 11
+ },
+ "resolved_under_a_generic_branch": 0,
+ "top_unresolved": [
+  {
+   "phrase": "llm agents",
+   "papers": 62
+  },
+  {
+   "phrase": "large language",
+   "papers": 23
+  },
+  {
+   "phrase": "multi-agent framework",
+   "papers": 19
+  },
+  {
+   "phrase": "llm agent",
+   "papers": 10
+  },
+  {
+   "phrase": "self-evolving agents",
+   "papers": 8
+  },
+  {
+   "phrase": "agent systems",
+   "papers": 8
+  },
+  {
+   "phrase": "prompt injection",
+   "papers": 8
+  },
+  {
+   "phrase": "coding agents",
+   "papers": 7
+  },
+  {
+   "phrase": "code generation",
+   "papers": 7
+  },
+  {
+   "phrase": "time series",
+   "papers": 7
+  },
+  {
+   "phrase": "llm multi-agent",
+   "papers": 6
+  },
+  {
+   "phrase": "agent skills",
+   "papers": 6
+  },
+  {
+   "phrase": "agent harness",
+   "papers": 6
+  },
+  {
+   "phrase": "harness optimization",
+   "papers": 5
+  },
+  {
+   "phrase": "evaluating llm",
+   "papers": 5
+  },
+  {
+   "phrase": "agentic framework",
+   "papers": 5
+  },
+  {
+   "phrase": "long-horizon llm agents",
+   "papers": 5
+  },
+  {
+   "phrase": "long-horizon llm",
+   "papers": 5
+  },
+  {
+   "phrase": "agent memory",
+   "papers": 5
+  },
+  {
+   "phrase": "agentic system",
+   "papers": 5
+  },
+  {
+   "phrase": "self-evolving llm",
+   "papers": 5
+  },
+  {
+   "phrase": "video reasoning",
+   "papers": 5
+  },
+  {
+   "phrase": "benchmarking llm",
+   "papers": 4
+  },
+  {
+   "phrase": "recursive self-improvement",
+   "papers": 4
+  },
+  {
+   "phrase": "empirical study",
+   "papers": 4
+  },
+  {
+   "phrase": "skill selection",
+   "papers": 4
+  },
+  {
+   "phrase": "agent skill",
+   "papers": 4
+  },
+  {
+   "phrase": "policy optimization",
+   "papers": 4
+  },
+  {
+   "phrase": "tacit knowledge",
+   "papers": 4
+  },
+  {
+   "phrase": "kv cache",
+   "papers": 4
+  },
+  {
+   "phrase": "adaptive memory",
+   "papers": 4
+  },
+  {
+   "phrase": "agent-native corpus scaffold",
+   "papers": 4
+  },
+  {
+   "phrase": "cyber threat intelligence",
+   "papers": 4
+  },
+  {
+   "phrase": "cyber threat",
+   "papers": 4
+  },
+  {
+   "phrase": "threat intelligence",
+   "papers": 4
+  },
+  {
+   "phrase": "agent-native corpus",
+   "papers": 4
+  },
+  {
+   "phrase": "corpus scaffold",
+   "papers": 4
+  },
+  {
+   "phrase": "memory retrieval",
+   "papers": 4
+  },
+  {
+   "phrase": "don t",
+   "papers": 4
+  },
+  {
+   "phrase": "augmented generation",
+   "papers": 4
+  },
+  {
+   "phrase": "multi-agent ai",
+   "papers": 4
+  },
+  {
+   "phrase": "llm-based multi-agent",
+   "papers": 4
+  },
+  {
+   "phrase": "llm-based multi-agent systems",
+   "papers": 4
+  },
+  {
+   "phrase": "ai framework",
+   "papers": 4
+  },
+  {
+   "phrase": "adversarial multi-agent framework",
+   "papers": 4
+  },
+  {
+   "phrase": "adversarial multi-agent",
+   "papers": 4
+  },
+  {
+   "phrase": "llm reasoning",
+   "papers": 4
+  },
+  {
+   "phrase": "agentic reasoning",
+   "papers": 4
+  },
+  {
+   "phrase": "tool calling",
+   "papers": 4
+  },
+  {
+   "phrase": "spatial reasoning",
+   "papers": 4
+  },
+  {
+   "phrase": "multimodal reasoning",
+   "papers": 4
+  },
+  {
+   "phrase": "self-evolving agent",
+   "papers": 4
+  },
+  {
+   "phrase": "self-evolving agentic",
+   "papers": 4
+  },
+  {
+   "phrase": "agentic approach",
+   "papers": 3
+  },
+  {
+   "phrase": "agentic tool",
+   "papers": 3
+  },
+  {
+   "phrase": "task selection",
+   "papers": 3
+  },
+  {
+   "phrase": "task-coevolve efficient harness",
+   "papers": 3
+  },
+  {
+   "phrase": "efficient harness optimization",
+   "papers": 3
+  },
+  {
+   "phrase": "adaptive validation",
+   "papers": 3
+  },
+  {
+   "phrase": "adaptive validation task",
+   "papers": 3
+  }
+ ],
+ "sample_resolved": [
+  {
+   "phrase": "language models",
+   "curie": "CCS:10002951.10003317.10003338.10003341",
+   "label": "Language models"
+  },
+  {
+   "phrase": "reinforcement learning",
+   "curie": "CCS:10010147.10010257.10010258.10010261",
+   "label": "Reinforcement learning"
+  },
+  {
+   "phrase": "large language models",
+   "curie": "WD:Q115305900",
+   "label": "large language model"
+  },
+  {
+   "phrase": "retrieval-augmented generation",
+   "curie": "WD:Q121362277",
+   "label": "retrieval-augmented generation"
+  },
+  {
+   "phrase": "agentic ai",
+   "curie": "WD:Q132451509",
+   "label": "AI agent"
+  },
+  {
+   "phrase": "question answering",
+   "curie": "CCS:10002951.10003317.10003347.10003348",
+   "label": "Question answering"
+  },
+  {
+   "phrase": "multi-agent system",
+   "curie": "WD:Q529909",
+   "label": "multi-agent system"
+  },
+  {
+   "phrase": "multi-agent systems",
+   "curie": "CCS:10010147.10010178.10010219.10010220",
+   "label": "Multi-agent systems"
+  },
+  {
+   "phrase": "knowledge graphs",
+   "curie": "WD:Q126085568",
+   "label": "The concept of knowledge graph"
+  },
+  {
+   "phrase": "language model",
+   "curie": "CCS:10002951.10003317.10003338.10003341",
+   "label": "Language models"
+  },
+  {
+   "phrase": "ai agents",
+   "curie": "WD:Q132451509",
+   "label": "AI agent"
+  },
+  {
+   "phrase": "large language model",
+   "curie": "WD:Q115305900",
+   "label": "large language model"
+  },
+  {
+   "phrase": "artificial intelligence",
+   "curie": "CCS:10010147.10010178",
+   "label": "Artificial intelligence"
+  },
+  {
+   "phrase": "ai agent",
+   "curie": "WD:Q132451509",
+   "label": "AI agent"
+  },
+  {
+   "phrase": "genetic programming",
+   "curie": "CCS:10011007.10011074.10011092.10011782.10011813",
+   "label": "Genetic programming"
+  },
+  {
+   "phrase": "large reasoning models",
+   "curie": "WD:Q131936230",
+   "label": "reasoning language model"
+  },
+  {
+   "phrase": "reasoning models",
+   "curie": "WD:Q131936230",
+   "label": "reasoning language model"
+  },
+  {
+   "phrase": "anomaly detection",
+   "curie": "CCS:10010147.10010257.10010258.10010260.10010229",
+   "label": "Anomaly detection"
+  },
+  {
+   "phrase": "autonomous driving",
+   "curie": "WD:Q19835007",
+   "label": "autonomous driving"
+  }
+ ]
+}
