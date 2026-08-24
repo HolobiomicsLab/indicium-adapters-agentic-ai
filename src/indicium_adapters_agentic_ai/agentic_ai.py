@@ -36,9 +36,16 @@ class AgenticAIAdapter:
     neither is reported as unmatched rather than passed over. See
     ``scripts/generate_concept_index.py`` for the measurement and the anchors.
 
-    ``subdomains`` and ``techniques`` are read from the ACM's own tree (the
-    children of "Artificial intelligence" and "Machine learning", and everything
-    below them) rather than hand-listed, so the decomposition is the field's own.
+    ``subdomains`` and ``techniques`` were read from the ACM's own tree until the
+    2026-08-25 cross-domain audit measured what that tree admits. CCS below
+    "Artificial intelligence" is 13 branches and 154 terms of general AI, machine
+    learning and vision -- ``cross-validation``, ``anomaly-detection``,
+    ``3d-imaging`` -- so declaring it lets this adapter claim any quantitative
+    paper in any science that happens to use one of them. Measured against the
+    harvested corpus the whole tree matched ZERO rows: it bought nothing and
+    risked everything. The terms declared below are the ones the corpus attests.
+    Both published trees are still shipped and still answer ``enrich_claim``;
+    what narrowed is the claim about which field a paper belongs to.
 
     Every qualifier matches ``^[a-z][a-z0-9_]*$`` (snake_case), required because
     Perspicacite routes adapter qualifiers onto the open ``asb:domainQualifier``
@@ -110,17 +117,23 @@ class AgenticAIAdapter:
         "swh": "https://archive.softwareheritage.org/",
     }
 
-    # ---- vocabulary sourced from the published trees -----------------------
+    # ---- vocabulary the corpus attests -------------------------------------
+    # Not read from CCS; see the class docstring for what that tree admits.
 
-    @property
-    def subdomains(self) -> tuple[str, ...]:
-        """CCS children of "Artificial intelligence" and "Machine learning"."""
-        return tuple(sorted(_slug(name) for name in _concepts.subdomains()))
+    subdomains: tuple[str, ...] = (
+        "llm-agent",
+        "language-model-agent",
+        "multi-agent-llm",
+    )
 
-    @property
-    def techniques(self) -> tuple[str, ...]:
-        """Everything CCS places below those children."""
-        return tuple(sorted(_slug(name) for name in _concepts.techniques()))
+    techniques: tuple[str, ...] = (
+        "chain-of-thought",
+        "retrieval-augmented",
+        "prompt-engineering",
+        "tool-calling",
+        "agent-harness",
+        "agent-benchmark",
+    )
 
     # ---- protocol methods --------------------------------------------------
 
