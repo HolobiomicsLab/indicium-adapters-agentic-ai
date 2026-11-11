@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- 2026-11-11: CI and development installs now use the published dependencies
+  from PyPI.
+
 ## 0.1.0
 
 First release.
