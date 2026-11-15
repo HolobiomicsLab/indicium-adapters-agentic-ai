@@ -109,3 +109,5 @@ Nothing else in the package touches the network; `enrich_claim` is pure.
 
 MIT. The vocabularies keep their own: ACM CCS 2012 is published by the ACM,
 Wikidata is CC0.
+
+Cite this package with `CITATION.cff`.
